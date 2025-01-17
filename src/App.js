@@ -1,5 +1,10 @@
+import Home from "./paginas/Home";
+import Sobre from "./paginas/Sobre";
+
+const pagina = window.location.pathname === "/" ? <Home /> : <Sobre />;
+
 function App() {
-  return <h1>teste</h1>;
+  return pagina;
 }
 
 export default App;
