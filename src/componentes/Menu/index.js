@@ -1,16 +1,12 @@
-import { Link } from "react-router-dom";
+import MenuLink from "../MenuLink";
 import "./Menu.css";
 
 const Menu = () => {
   return (
     <header>
       <nav className="navegacao">
-        <Link className="link" to="/">
-          Início
-        </Link>
-        <Link className="link" to="/sobremim">
-          Sobre mim
-        </Link>
+        <MenuLink to="/">Início</MenuLink>
+        <MenuLink to="/sobremim">Sobre mim</MenuLink>
       </nav>
     </header>
   );
