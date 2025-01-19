@@ -4,7 +4,7 @@
 }
 
 .fotoCapa,
-.titulo {
+.titulo-post-modelo {
   height: 204px;
 }
 
@@ -18,7 +18,7 @@
   z-index: -1;
 }
 
-.titulo {
+.titulo-post-modelo {
   font-family: var(--fonte-secundaria);
   padding: 0 7.5rem;
   font-size: 4rem;

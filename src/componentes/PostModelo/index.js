@@ -6,7 +6,7 @@ const PostModelo = ({ fotoCapa, titulo, children }) => {
         className="fotoCapa"
         style={{ backgroundImage: `url(${fotoCapa})` }}
       ></div>
-      <h2 className="titulo">{titulo}</h2>
+      <h2 className="titulo-post-modelo">{titulo}</h2>
       <div className="postConteudoContainer">{children}</div>
     </article>
   );
