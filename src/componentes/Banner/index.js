@@ -6,8 +6,8 @@ const Banner = () => {
   return (
     <div className="banner">
       <div className="apresentacao">
-        <h1 className="titulo">Gabriel Ghiaroni</h1>
-        <p className="paragrafo">
+        <h1 className="titulo-banner">Gabriel Ghiaroni</h1>
+        <p className="paragrafo-banner">
           Boas vindas ao meu espaço pessoal! Eu sou Gabriel Ghiaroni, instrutor
           de Front-end da Alura. Aqui compartilho vários conhecimentos, espero
           que aprenda algo novo :)

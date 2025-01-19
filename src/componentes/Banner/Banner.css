@@ -6,14 +6,14 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.titulo {
+.titulo-banner {
   font-family: var(--fonte-secundaria);
   font-size: 4rem;
   margin-top: 4.875rem;
   margin-bottom: 2rem;
 }
 
-.paragrafo {
+.paragrafo-banner {
   font-family: var(--fonte-secundaria);
   font-size: 1.5rem;
   line-height: 2rem;
