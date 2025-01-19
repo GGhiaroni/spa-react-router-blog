@@ -1,5 +1,3 @@
-const Sobre = () => {
-  return <h1>Sobre mim meu pae</h1>;
-};
+const Sobre = () => {};
 
 export default Sobre;
