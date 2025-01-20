@@ -14,7 +14,7 @@ const slugify = (titulo) => {
 const PostCard = ({ post }) => {
   const titulosPostParaParametro = slugify(post.titulo);
   return (
-    <Link to={`/posts/${titulosPostParaParametro}`}>
+    <Link to={`/posts/${titulosPostParaParametro}/${post.id}`}>
       <div className="post">
         <img
           className="capa"
