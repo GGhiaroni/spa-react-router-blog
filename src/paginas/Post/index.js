@@ -1,5 +1,6 @@
 import PostModelo from "componentes/PostModelo";
 import posts from "json/posts.json";
+import ReactMarkdown from "react-markdown";
 import { useParams } from "react-router-dom";
 
 const Post = () => {
@@ -13,7 +14,9 @@ const Post = () => {
     <PostModelo
       fotoCapa={`/assets/posts/${post.id}/capa.png`}
       titulo={post.titulo}
-    ></PostModelo>
+    >
+      <ReactMarkdown>{post.texto}</ReactMarkdown>
+    </PostModelo>
   );
 };
 
