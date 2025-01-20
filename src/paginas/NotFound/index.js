@@ -1,7 +1,10 @@
 import erro404 from "assets/erro_404.png";
+import BotaoPrincipal from "componentes/BotaoPrincipal";
+import { useNavigate } from "react-router-dom";
 import "./NotFound.css";
 
 const NotFound = () => {
+  const navegar = useNavigate();
   return (
     <>
       <div className="conteudoContainer">
@@ -14,8 +17,8 @@ const NotFound = () => {
           Aguarde uns instantes e recarregue a página, ou volte para a página
           inicial.
         </p>
-        <div className="botaoContainer-notfound">
-          <button>Voltar</button>
+        <div className="botaoContainer-notfound" onClick={() => navegar("/")}>
+          <BotaoPrincipal>Voltar</BotaoPrincipal>
         </div>
         <img
           className="imagem-cachorro"
