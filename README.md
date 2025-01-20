@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# 📰 DailyTech - News Diárias sobre Tecnologia 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo(a) ao **DailyTech**! Essa é uma **Single Page Application (SPA)** dedicada a trazer as notícias mais recentes e relevantes sobre o mundo da tecnologia. 🌐⚙️
 
-## Available Scripts
+![Captura de Tela 2025-01-20 às 15 52 13](https://github.com/user-attachments/assets/3183cce0-721d-46e2-9f03-0b69910efdd5)
 
-In the project directory, you can run:
+---
+<br>
 
-### `npm start`
+## LINK DO PROJETO
+<br>
+https://spa-react-router-blog.vercel.app/posts/o-que-e-um-sprite-2d/4/efiefjew
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📖 Sobre o Projeto
 
-### `npm test`
+O **DailyTech** foi construído com foco na experiência do usuário, oferecendo uma interface moderna e dinâmica que permite acessar as notícias mais recentes de forma intuitiva. Cada detalhe do projeto foi pensado para entregar conteúdo com performance e organização.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🔧 Tecnologias Utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ⚛️ **React**
+A base do projeto! React é uma biblioteca JavaScript para criar interfaces de usuário. Ele nos permite dividir a aplicação em **componentes reutilizáveis**, facilitando o desenvolvimento e a manutenção. ✨
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🛤️ **React Router DOM**
+Essa biblioteca foi essencial para implementar a navegação entre as páginas. Com ela, conseguimos criar rotas dinâmicas como `/posts/:slug`, tornando a SPA funcional sem precisar recarregar a página. 🔄
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🖋️ **React Markdown**
+Usado para renderizar conteúdo em formato **Markdown**, permitindo que os posts sejam escritos com facilidade, mantendo a flexibilidade e a personalização visual. 📝
 
-### `npm run eject`
+### ⏳ **useEffect**
+Um poderoso **hook** do React usado para realizar efeitos colaterais em componentes, como buscar dados de uma API ou atualizar o título da página dinamicamente. 🔄
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🧩 **Componentes**
+O projeto é composto por diversos componentes bem organizados, como **Menu**, **Rodapé**, **PostCard**, e outros, garantindo que cada parte da interface seja modular e reutilizável. 🛠️
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🎨 **Estilos**
+Cada componente possui seus próprios estilos, criados para tornar o layout atraente e responsivo. A ideia foi oferecer uma experiência agradável em qualquer dispositivo. 📱💻
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🛑 **Página 404 - Not Found**
+Erros acontecem, mas aqui eles são tratados com estilo! Uma página especial foi criada para informar o usuário quando ele tenta acessar um link inválido. É funcional e esteticamente agradável. (Veja mais abaixo! 👇)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🧭 **useParams e useNavigate**
+- **useParams**: Permite acessar os parâmetros das rotas dinâmicas, como `slug`, facilitando a identificação de qual post carregar. 🧾
+- **useNavigate**: Proporciona redirecionamentos programáticos, permitindo uma navegação mais fluida. 🧭
 
-## Learn More
+### 🔗 **Slugify**
+A função `slugify` transforma títulos em URLs amigáveis, removendo acentos e espaços, e substituindo por `-`. Isso melhora a **SEO** e a experiência do usuário ao compartilhar links. 🌍
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🌟 Página de Erro 404 - Not Found
 
-### Code Splitting
+Quando algo dá errado, temos uma página dedicada para comunicar ao usuário que o conteúdo solicitado não foi encontrado. O design foi pensado para ser **claro e amigável**, sem deixar o usuário perdido.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+👇 **Print da Página de Erro:**
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Captura de Tela 2025-01-20 às 15 51 13](https://github.com/user-attachments/assets/115701a4-a829-4246-b64e-42e1643fe1d2)
 
-### Making a Progressive Web App
+## ACESSE O PROJETO COMPLETO NO LINK ABAIXO 👇
+https://spa-react-router-blog.vercel.app/posts/o-que-e-um-sprite-2d/4/efiefjew
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<br>
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
