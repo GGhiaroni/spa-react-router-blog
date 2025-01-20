@@ -1,5 +1,7 @@
+import PostCard from "componentes/PostCard";
 import PostModelo from "componentes/PostModelo";
 import posts from "json/posts.json";
+import NotFound from "paginas/NotFound";
 import ReactMarkdown from "react-markdown";
 import { useParams } from "react-router-dom";
 import "./Post.css";
@@ -12,12 +14,15 @@ const Post = () => {
   });
 
   if (!post) {
-    return (
-      <h1 className="h1-post-nao-encontrado">
-        Post não encontrado. Por favor, verifique e tente novamente.
-      </h1>
-    );
+    return <NotFound />;
   }
+
+  const postsRecomendados = posts
+    .filter((post) => post.id !== Number(id))
+    .sort((a, b) => b.id - a.id)
+    .slice(0, 4);
+
+  console.log(postsRecomendados);
 
   return (
     <PostModelo
@@ -27,6 +32,17 @@ const Post = () => {
       <div className="post-markdown-container">
         <ReactMarkdown>{post.texto}</ReactMarkdown>
       </div>
+      <h2 className="titulos-outros-posts">
+        Outros posts que você pode gostar:
+      </h2>
+      <ul className="posts-recomendados">
+        {postsRecomendados.map((post) => (
+          <li key={post.id}>
+            <PostCard post={post} />
+          </li>
+        ))}
+        ; ;
+      </ul>
     </PostModelo>
   );
 };
